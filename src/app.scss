@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+//  definisco colori primari
+$primary_1: #a2b9bc;
+// @mixin name {
+
+@mixin colori{
+  color:#58402c;
+}
+@mixin colori1{
+  background-color: #ffe7d2;
+}
+
+@mixin font{
+  font-size: 26px;
+  font-family: HarmoniaSansProCyr-SemiBd;
+  line-height: 36.4px;
+}
+
+
+// nav
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+
+h2{
+  font-size: 16px;
+  line-height: 25.6px;
+  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  @include colori;
+}
+a{
+  font-family: HarmoniaSansProCyr-SemiBd;
+  font-size: 14px;
+  line-height: 35px;
+  @include colori;
+  text-decoration: none;
+  margin: 15px;
+
+}
+
+}
+
+// primo blocco
+.first{
+  display: flex;
+
+  img{
+    width: 600px;
+  }
+}
+
+.first-left{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  h1{
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  p{
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  button{
+    height: 35px;
+    width: 170px;
+    margin-top: 50px;
+    background-color: #30488f;
+    color:white;
+    border-radius: 20px;
+  }
+
+}
+
+// secondo
+
+.container1{
+
+  @include colori1;
+  margin-top: 180px;
+
+.second-pri{
+  text-align: center;
+  @include colori;
+  @include font;
+}
+}
