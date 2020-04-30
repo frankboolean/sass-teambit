@@ -20,13 +20,20 @@ $primary_1: #a2b9bc;
   line-height: 36.4px;
 }
 
+@mixin fontscritte{
+  color:#58402c;
+  font-size: 18px;
+}
+
 
 // nav
 
 .nav{
   display: flex;
   justify-content: space-between;
-
+.nav-left{
+  display: flex;
+}
 h2{
   font-size: 16px;
   line-height: 25.6px;
@@ -78,15 +85,218 @@ a{
 }
 
 // secondo
+.page-section{
+  width: 100%;
+  @include colori1;
 
+}
 .container1{
-
+  width: 1150px;
+  margin-left: 100px;
   @include colori1;
   margin-top: 180px;
+  border-bottom: 1px solid grey;
 
 .second-pri{
   text-align: center;
   @include colori;
   @include font;
 }
+}
+
+
+.second-img{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+img{
+  width: 200px;
+}
+h4{
+  @include fontscritte;
+}
+}
+
+.second-ter img{
+  padding: 30px;
+  margin-top: 70px;
+  width:300px;
+  display: block;
+  margin-left: auto;
+   margin-right: auto;
+}
+//  blocco 3
+
+.container-2{
+  @include colori1;
+h2{
+  padding: 30px;
+  text-align: center;
+  @include colori;
+  @include font;
+
+}
+}
+
+.ter-img{
+  display: flex;
+  justify-content: space-between;
+img{
+  margin-top: 70px;
+  width:150px;
+}
+p{
+  @include fontscritte;
+}
+}
+
+.terz-imgfinale {
+  img{
+    padding: 30px;
+    margin-top: 70px;
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+ h2{
+   text-align: center;
+   @include colori;
+   @include font;
+ }
+}
+// blocco 4
+
+
+.container-3{
+  padding:70px;
+  display: flex;
+img{
+  width: 50%;
+}
+h2{
+  @include colori;
+  @include font;
+}
+p{
+  @include colori;
+  @include font;
+}
+}
+
+// blocco5
+.container-4{
+  display: flex;
+  h2{
+    @include colori;
+    @include font;
+  }
+  p{
+    @include colori;
+    @include font;
+  }
+  img{
+    width: 300px;
+  }
+
+}
+// blocco 6
+
+.container-5{
+  display: flex;
+  img{
+    width: 50%;
+  }
+  h2{
+    @include colori;
+    @include font;
+  }
+  p{
+    @include colori;
+    @include font;
+  }
+
+}
+
+// blocco 7
+
+.container-6{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 400px;
+  }
+  h2{
+    @include colori;
+    @include font;
+  }
+  p{
+    @include colori;
+    @include font;
+  }
+}
+// blocco 8
+
+.container-bianco{
+  display: flex;
+  flex-direction: column;
+  @include colori1;
+
+  h1{
+    font-size: 50px;
+    margin-top: 80px;
+    text-align: center;
+    @include colori;
+  }
+
+  .blocco-bianco {
+    padding: 50px;
+    border: 1px solid black;
+    line-height: 21px;
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 630px;
+    text-align: center;
+    background-color: white;
+  }
+  p{
+    font-size: 14px;
+    font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  }
+  button{
+    height: 35px;
+    width: 170px;
+    margin-top: 50px;
+    background-color: #30488f;
+    color:white;
+    border-radius: 20px;
+    margin-left: 25%;
+  }
+}
+// foooter
+
+footer{
+  margin-top: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  h2{
+    @include colori;
+
+  }
+  ol{
+    @include colori;
+    font-size: 18px;
+    font-family: HarmoniaSansProCyr-SemiBd;
+    margin-bottom:10px;
+
+  }
+  li{
+    list-style-type: none;
+    @include colori;
+    font-size: 14px;
+    font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  }
 }
